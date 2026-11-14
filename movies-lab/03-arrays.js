@@ -21,3 +21,5 @@ console.log(service.allHaveDirector(movies));
 const interstellar = service.getById(movies, 3);
 console.log(service.getCastNames(interstellar));
 
+console.log(service.getDirectorTitles(movies, "Christopher Nolan"));
+

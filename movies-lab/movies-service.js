@@ -16,3 +16,8 @@ export const allHaveDirector = movies => movies.every(movie => movie.director?.n
 
 export const getCastNames = movie => movie.cast.map(actor => actor.name);
 
+export const getDirectorTitles = (movies, directorName) =>
+  movies
+    .filter(movie => movie.director.name === directorName)
+    .map(movie => movie.title);
+
